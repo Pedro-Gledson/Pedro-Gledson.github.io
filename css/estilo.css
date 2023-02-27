@@ -1,0 +1,30 @@
+/* CSS reset - Inìcio */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,7;
+    color: rgb(100, 100, 100);
+    padding: 3%;
+}
+html{
+    font-size: 62.5%;
+}
+/* CSS reset - Fim */
+header{
+    height: 96vh;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(152, 116, 245, 0.9),
+        rgba(31, 2, 255, 0.8)),
+        url(/images/codigos-html-para-paginas-web.webp);
+    background-size: cover;
+    clip-path: polygon(0 20%, 0 100%, 100% 70%,100% 0 );
+    position: relative;
+}
+
