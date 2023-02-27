@@ -16,6 +16,8 @@ html{
     font-size: 62.5%;
 }
 /* CSS reset - Fim */
+
+/* Cabeçalho - Inicil*/
 header{
     height: 96vh;
     background-image: linear-gradient(
@@ -27,4 +29,43 @@ header{
     clip-path: polygon(0 20%, 0 100%, 100% 70%,100% 0 );
     position: relative;
 }
-
+.textoHeader{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 20%;
+    transform: translate(0%,50%);
+    text-align: center;
+    color: aqua;
+    text-transform: uppercase;
+}
+.textoHeader h1{
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-shadow: .5rem 1rem 1rem #0817c5;
+}
+.textoHeader h2{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    text-shadow: .5rem .5rem 1rem #000;
+    margin-bottom: 4rem;
+}
+.textoHeader a,
+.textoHeader a:visited{
+    text-decoration: none;
+    background-color: silver;
+    border-radius: 5rem;
+    display: inline-block;
+    padding:1.5rem 4rem;
+}
+.foto{
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+}
+.foto img{
+    height: 18rem;
+    border-radius:100%
+}
+/*cabeçalho - fim*/
