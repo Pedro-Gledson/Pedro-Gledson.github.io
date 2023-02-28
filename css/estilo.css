@@ -43,6 +43,7 @@ header{
     font-size: 4rem;
     letter-spacing: 1rem;
     text-shadow: .5rem 1rem 1rem #0817c5;
+    animation: entradaPorCima 1s;
 }
 .textoHeader h2{
     font-size: 2rem;
@@ -50,6 +51,7 @@ header{
     font-weight: 700;
     text-shadow: .5rem .5rem 1rem #000;
     margin-bottom: 4rem;
+    animation: entradaPorBaixo 1s;
 }
 .textoHeader a,
 .textoHeader a:visited{
@@ -58,14 +60,68 @@ header{
     border-radius: 5rem;
     display: inline-block;
     padding:1.5rem 4rem;
+    animation: entrada 1s .5s;
+    animation-fill-mode: backwards;
+}
+.textoHeader a:hover{
+    transform: translateY(-.5rem);
+    box-shadow: .5rem 1.5rem 3.5rem #000;
+}
+.textoHeader a:active{
+    transform: translateY(-.2rem);
+    box-shadow: .5rem .5rem 1.5rem #000;
 }
 .foto{
     position: absolute;
     top: 6rem;
     right: 3rem;
+    animation: foto 1s;
 }
 .foto img{
     height: 18rem;
     border-radius:100%
 }
 /*cabeçalho - fim*/
+/* animações - inicil*/
+@keyframes entradaPorCima{
+    0%{
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+    80%{
+      transform: translateY(5rem);  
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes entradaPorBaixo{
+    0%{
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(-2rem);
+    }
+}
+@keyframes entrada{
+    0%{
+      opacity: 0;
+      transform: translateZ(0);
+    }
+    100%{
+      opacity: 1;
+      transform: translateZ(5rem);
+    }
+}
+@keyframes foto{
+    0%{
+        transform: scale(0) rotate3d(80, 0, 80, 360deg);
+    }
+    100%{
+transform: scale(1);
+    }
+}    
+/*animações - fim*/
