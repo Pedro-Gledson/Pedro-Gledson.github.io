@@ -31,8 +31,8 @@ header{
 }
 .textoHeader{
     position: absolute;
-    left: 25%;
-    right: 25%;
+    left: 15%;
+    right: 15%;
     top: 20%;
     transform: translate(0%,50%);
     text-align: center;
@@ -41,7 +41,7 @@ header{
 }
 .textoHeader h1{
     font-size: 4rem;
-    letter-spacing: 1rem;
+    letter-spacing: .8rem;
     text-shadow: .5rem 1rem 1rem #0817c5;
     animation: entradaPorCima 1s;
 }
@@ -50,7 +50,8 @@ header{
     letter-spacing: 1rem;
     font-weight: 700;
     text-shadow: .5rem .5rem 1rem #000;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     animation: entradaPorBaixo 1s;
 }
 .textoHeader a,
@@ -82,6 +83,73 @@ header{
     border-radius:100%
 }
 /*cabeçalho - fim*/
+
+/* Main - inicio*/
+main .sobreMim{
+    background-color:#ccc;
+    padding-top: 30rem;
+    padding-bottom:30rem ;
+    margin-top: -30rem;
+}
+main .sobreMim h3{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+main .sobreMim .container{
+    display: flex;
+}
+main .texto{
+    width: 40%;
+    margin-right: 5rem;
+}       
+#conteudoSobreMim{
+   padding-left: 2rem;
+   padding-right: 2rem; 
+}
+#conteudoSobreMim h4{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+#conteudoSobreMim p {
+    text-align: justify;
+}
+#conteudoSobreMim P:not(:last-child){
+    margin-bottom: 5rem;
+}
+.fotos{
+    width: 50%;
+    position: relative;
+} 
+.fotos img {
+    position: absolute;
+    width: 22vw;
+    top:2rem;
+    transition: all .2s;
+}
+.fotos img:first-child{
+    z-index: 2;
+    left: 0rem;
+    top: 10rem;
+}
+.fotos img:nth-child(2){
+    left:28rem;
+    top: 7rem;
+    z-index: 1;
+}
+.fotos img:last-child{
+    right: 13rem;
+    z-index: 3;
+}
+.fotos img:hover{
+    z-index: 5;
+    outline: 1rem solid rgba(31, 2, 255, 0.8);
+    outline-offset: .5rem;
+}
+/* Main - fim*/
 /* animações - inicil*/
 @keyframes entradaPorCima{
     0%{
