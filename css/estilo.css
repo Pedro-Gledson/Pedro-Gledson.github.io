@@ -126,7 +126,7 @@ main .texto{
 } 
 .fotos img {
     position: absolute;
-    width: 22vw;
+    width: 18vw;
     top:2rem;
     transition: all .2s;
 }
@@ -136,7 +136,7 @@ main .texto{
     top: 10rem;
 }
 .fotos img:nth-child(2){
-    left:28rem;
+    left:15rem;
     top: 7rem;
     z-index: 1;
 }
@@ -150,6 +150,125 @@ main .texto{
     outline-offset: .5rem;
 }
 /* Main - fim*/
+.habilidades {
+    background-color:rgba(31, 2, 255, 0.8);
+    transform:skewX(8deg);
+    position:relative;
+    z-index: 1;
+    margin-top: -20rem;
+    padding: 20rem;
+    height: 150vh;
+}
+.habilidades h4,
+.habilidades .skills {
+    transform: skewX(-8deg);
+}
+.habilidades h4 {
+    color:greenyellow;
+    background-image: none;
+}
+.habilidades .skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+.habilidades .card {
+    position: relative;
+    perspective: 150rem;
+    -webkit-perspective: 150rem;
+    width: 30vw;
+    height: 70rem;
+}
+.habilidades .frente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(11, 73, 11);
+    backface-visibility: hidden;
+    border-radius:.8rem;
+    transition: all .9s ease-in-out;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+}
+.habilidades .verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11, 73, 11);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: .8rem;
+    transition: all .9s ease-in-out;
+    box-shadow:0 1.5rem 4rem rgba(0,0,0,.6);
+}
+.habilidades .card:hover .frente{
+    transform: rotateY(-180deg);
+}
+.habilidades .card:hover .verso{
+    transform: rotateY(0deg);
+}
+.habilidades .destaque{
+    background-blend-mode: color;
+    background-size: cover;
+    height: 40%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.habilidades ul{
+    list-style-type: none;
+    width: 80%;
+    margin: 1rem auto;
+}
+.habilidades ul li{
+    padding: 2rem 3rem;
+}
+.habilidades ul li:not(:last-child){
+    border-bottom: 2px solid #f25151;
+}
+.habilidades .destaque h5{
+    font-size: 2.8rem;
+    font-weight: 40rem;
+    text-transform: uppercase;
+    color: rgb(240, 153, 47);
+    position: absolute;
+    text-align: right;
+    padding-bottom: 5rem;
+    top: 10%;
+    left: 40%;
+}
+.habilidades .front .destaque{
+    background-image: linear-gradient(to bottom right,#2804f2,#e90303), url(../images/fundoHTML.jpeg);
+}
+.habilidades .front .destaque h5{
+    background-color: #05cdff;
+}
+.habilidades .back .destaque{
+    background-image: linear-gradient(to bottom right, #459631, #1e1bef), url(../images/fundoHTML.jpeg);
+}
+.habilidades .back .destaque h5{
+    background-color: #1e1bef;
+}
+.habilidades .muito .destaque{
+    background-image: linear-gradient(to bottom right, #08f42f, #dbf704), url(../images/fundoHTML.jpeg);
+}
+.habilidades .muito .destaque h5{
+    background-color: #520b03;
+}
+.habilidades .card .verso h5{
+    font-size: 5rem;
+    padding: 3rem 3rem;
+}
+.habilidades .front .verso{
+    background-image: linear-gradient(to bottom right, #c76006, #7a0404);
+}
+.habilidades .back .verso{
+    background-image: linear-gradient(to bottom right, #0525f9, #070ffc);
+}
+.habilidades .muito .verso{
+    background-image: linear-gradient(To bottom right, #05213d, #093802);
+}
+
 /* animações - inicil*/
 @keyframes entradaPorCima{
     0%{
