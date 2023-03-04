@@ -24,7 +24,7 @@ header{
         to bottom right,
         rgba(152, 116, 245, 0.9),
         rgba(31, 2, 255, 0.8)),
-        url(/images/codigos-html-para-paginas-web.webp);
+        url(/images/fundoHTML.jpeg);
     background-size: cover;
     clip-path: polygon(0 20%, 0 100%, 100% 70%,100% 0 );
     position: relative;
@@ -36,7 +36,7 @@ header{
     top: 20%;
     transform: translate(0%,50%);
     text-align: center;
-    color: aqua;
+    color: rgb(187, 241, 241);
     text-transform: uppercase;
 }
 .textoHeader h1{
@@ -126,22 +126,23 @@ main .texto{
 } 
 .fotos img {
     position: absolute;
-    width: 18vw;
-    top:2rem;
+    width: 15vw;
+    top:5rem;
     transition: all .2s;
 }
 .fotos img:first-child{
+    left: 5rem;
+    top: 5rem;
     z-index: 2;
-    left: 0rem;
-    top: 10rem;
 }
 .fotos img:nth-child(2){
-    left:15rem;
-    top: 7rem;
+    left:18rem;
+    top: 8rem;
     z-index: 1;
 }
 .fotos img:last-child{
-    right: 13rem;
+    left:40rem;
+    top: 5rem;
     z-index: 3;
 }
 .fotos img:hover{
@@ -151,21 +152,30 @@ main .texto{
 }
 /* Main - fim*/
 .habilidades {
-    background-color:rgba(31, 2, 255, 0.8);
-    transform:skewX(8deg);
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(152, 116, 245, 0.9),
+        rgba(31, 2, 255, 0.8)),
+        url(/images/fundo2.png);
+    transform:skewX(deg);
     position:relative;
     z-index: 1;
     margin-top: -20rem;
     padding: 20rem;
-    height: 150vh;
+    height: 120vh;
+   
 }
 .habilidades h4,
 .habilidades .skills {
     transform: skewX(-8deg);
 }
-.habilidades h4 {
-    color:greenyellow;
-    background-image: none;
+.habilidades h4{
+    color:rgb(26, 2, 244);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    font-weight: 900;
+    margin-bottom: 5rem;
 }
 .habilidades .skills{
     display: flex;
@@ -174,8 +184,8 @@ main .texto{
 .habilidades .card {
     position: relative;
     perspective: 150rem;
-    -webkit-perspective: 150rem;
-    width: 30vw;
+    -webkit-perspective: 100rem;
+    width: 28vw;
     height: 70rem;
 }
 .habilidades .frente {
@@ -184,9 +194,9 @@ main .texto{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgb(11, 73, 11);
+    background-color:rgba(11, 73, 11, 0.954);
     backface-visibility: hidden;
-    border-radius:.8rem;
+    border-radius:1rem;
     transition: all .9s ease-in-out;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
 }
@@ -199,7 +209,7 @@ main .texto{
     background-color: rgb(11, 73, 11);
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    border-radius: .8rem;
+    border-radius: 1rem;
     transition: all .9s ease-in-out;
     box-shadow:0 1.5rem 4rem rgba(0,0,0,.6);
 }
@@ -215,22 +225,19 @@ main .texto{
     height: 40%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
-.habilidades ul{
+.habilidades ul li{
     list-style-type: none;
     width: 80%;
     margin: 1rem auto;
-}
-.habilidades ul li{
+    color: honeydew;
     padding: 2rem 3rem;
-}
-.habilidades ul li:not(:last-child){
     border-bottom: 2px solid #f25151;
 }
 .habilidades .destaque h5{
     font-size: 2.8rem;
     font-weight: 40rem;
     text-transform: uppercase;
-    color: rgb(240, 153, 47);
+    color:aliceblue;
     position: absolute;
     text-align: right;
     padding-bottom: 5rem;
@@ -241,34 +248,108 @@ main .texto{
     background-image: linear-gradient(to bottom right,#2804f2,#e90303), url(../images/fundoHTML.jpeg);
 }
 .habilidades .front .destaque h5{
-    background-color: #05cdff;
+    background-color:rgba(151, 18, 18, 0.9) ;
 }
 .habilidades .back .destaque{
     background-image: linear-gradient(to bottom right, #459631, #1e1bef), url(../images/fundoHTML.jpeg);
 }
 .habilidades .back .destaque h5{
-    background-color: #1e1bef;
+    background-color: #1f1befe7;
 }
 .habilidades .muito .destaque{
     background-image: linear-gradient(to bottom right, #08f42f, #dbf704), url(../images/fundoHTML.jpeg);
 }
 .habilidades .muito .destaque h5{
-    background-color: #520b03;
+    background-color: #0a8b06eb;
 }
 .habilidades .card .verso h5{
     font-size: 5rem;
     padding: 3rem 3rem;
 }
 .habilidades .front .verso{
-    background-image: linear-gradient(to bottom right, #c76006, #7a0404);
+    background-image: linear-gradient(to bottom right, #270505, #060445);
+    color:blanchedalmond;
 }
 .habilidades .back .verso{
-    background-image: linear-gradient(to bottom right, #0525f9, #070ffc);
+    background-image: linear-gradient(to bottom right, #4657d5, #05223c);
+    color:blanchedalmond;
 }
 .habilidades .muito .verso{
-    background-image: linear-gradient(To bottom right, #05213d, #093802);
+    background-image: linear-gradient(To bottom right, rgba(3, 96, 25, 0.775), #953232);
+    color:blanchedalmond;
 }
+.testemunhos{
+    position: relative;
+}
+.testemunhos video{
+    width: 100%;
+    margin-top: -8rem;
+    z-index: -3;
+    margin-block-start: -25rem;
+}
+.testemunhos .comentarios{
+    background-color: #b5b3b356;
+    width: 100%;
+    z-index: 0;
+    padding-top: 20rem;
+    position: absolute;
+    top: -10rem;
+    left:0;
+}
+.comentarios h3{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 7rem;
+    color: #f5f6f3;
+}
+.comentarios .item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50rem;
+}
+.item{
+    position:relative;
+    margin-bottom: 12rem;
+    width: 80%;
+    background-color: #ccc1cc;
+    transform: skewX(-20deg);
+}.item *{
+    transform: skewX(12deg);
+}
+.item figure img{
+    border-radius: 80%;
+    width: 8%;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+.item figure figcaption{
+    position: absolute;
+    bottom: 0;
+    left : 13rem;
+    font-size: 2rem;
+    color: #4f4e4e;
+    opacity: 0;
+    transition: all .2s;
+}
+.item figure:hover figcaption{
+    opacity: 1;
+    bottom: .5rem;
+}
+.item p{
+    width: 80%;
+    float:right;
+    margin-top: -8rem;
+}
+footer{
+    padding: 5rem;
+    background-color:#000;
+    margin-top: -2rem;
+    text-align: center;
+    font-style: oblique;
 
+}
 /* animações - inicil*/
 @keyframes entradaPorCima{
     0%{
