@@ -7,7 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1,7;
     color: rgb(100, 100, 100);
     padding: 3%;
@@ -22,8 +22,8 @@ header{
     height: 96vh;
     background-image: linear-gradient(
         to bottom right,
-        rgba(152, 116, 245, 0.9),
-        rgba(31, 2, 255, 0.8)),
+        rgba(98, 96, 116, 0.9),
+        rgba(0, 4, 5, 0.8)),
         url(/images/fundoHTML.jpeg);
     background-size: cover;
     clip-path: polygon(0 20%, 0 100%, 100% 70%,100% 0 );
@@ -49,7 +49,7 @@ header{
     font-size: 2rem;
     letter-spacing: 1rem;
     font-weight: 700;
-    text-shadow: .5rem .5rem 1rem #000;
+    text-shadow: .5rem .5rem 1rem #0d0df7;
     margin-top: 2rem;
     margin-bottom: 5rem;
     animation: entradaPorBaixo 1s;
@@ -75,10 +75,11 @@ header{
 .foto{
     position: absolute;
     top: 6rem;
-    right: 3rem;
+    right: 1.5rem;
     animation: foto 1s;
 }
 .foto img{
+    position: relative;
     height: 18rem;
     border-radius:100%
 }
@@ -147,15 +148,15 @@ main .texto{
 }
 .fotos img:hover{
     z-index: 5;
-    outline: 1rem solid rgba(31, 2, 255, 0.8);
+    outline: 1rem solid rgba(240, 4, 4, 0.8);
     outline-offset: .5rem;
 }
 /* Main - fim*/
 .habilidades {
     background-image: linear-gradient(
         to bottom right,
-        rgba(152, 116, 245, 0.9),
-        rgba(31, 2, 255, 0.8)),
+        rgba(126, 131, 46, 0.9),
+        rgba(1, 4, 6, 0.8)),
         url(/images/fundo2.png);
     transform:skewX(deg);
     position:relative;
@@ -393,3 +394,62 @@ transform: scale(1);
     }
 }    
 /*animações - fim*/
+/*responsividade - inicil  1200pv*/
+@media screen and (max-width: 1200px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header .foto{
+       position: relative;
+       left: 60%; 
+    }
+    .fotos img {
+        display:flex;
+        width:22rem;
+    }
+    header .textoHeader h1{
+        font-size: rem;
+        letter-spacing:rem;
+        margin-top: 0%;
+        top:px;
+    }
+    .textoHeader h2{
+        letter-spacing:1rem;
+    }
+    .habilidades h4{
+        margin-top: -12rem;
+    }
+    .habilidades .destaque h5 {
+        font-size: 2rem;
+        top: 10%;
+        left: 0%;
+        text-align: left;
+    }
+    .comentarios h3 {
+        margin-top: -6rem;
+        margin-bottom: 2rem;
+    }
+    .item p {
+        width: 80%;
+        float: right;
+        margin-top: -5rem;
+    }
+    .item figure figcaption {
+        left: 1rem;
+        margin-top:2rem; 
+    }
+    .comentarios .item1 { 
+        height: 37rem;
+    }
+}
+/* responsividade  min 768px max 979px*/
+@media screen and (min-width: 768px) and (max-width: 979px){
+    *{
+       margin: 0;
+    }
+
+}
+    
+
+
