@@ -447,9 +447,46 @@ transform: scale(1);
 @media screen and (min-width: 768px) and (max-width: 979px){
     *{
        margin: 0;
+       padding: 0;
     }
-
+    header.foto img{
+        height: 10rem;
+    }
+    header .texto h1{
+        display: flex;
+    }
+    .sobreMim h3{
+        margin-top: -5rem;
+    }
+    .fotos{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .fotos img:first-child{
+        left: -2rem;
+        top: 0rem;
+        width: 25rem;
+    }
+    .fotos img:nth-child(2){
+        left: 14rem;
+        top: 12rem;
+        width: 22rem;
+    }
+    .fotos img:last-child {
+        left: -2rem;
+        top: 24rem;
+        width: 25rem;
+    }
+    .habilidades{
+        margin-top: -20rem;
+        padding: 12rem;
+        height: 115vh;
+    }
+    .comentarios h3{
+        margin-top: -8rem;
+    }
+    .testemunhos video{
+        margin-block-start: -25rem;
+        width: 110rem;
+    }
 }
-    
-
-
